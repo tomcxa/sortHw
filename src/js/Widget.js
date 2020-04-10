@@ -8,7 +8,7 @@ export default class Widget {
     }
 
     insertToDOM() {
-        this.container.appendChild(this.element);
+        if (this.container) this.container.appendChild(this.element);
     }
 
     setClassAtr() {
